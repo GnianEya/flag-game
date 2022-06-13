@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Flag game</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess the country!</h1>
+      <p class="limit">( Asian countries )</p>
+      <p class="icon-heart">
+        <i class="fa-solid fa-heart icon-1"></i
+        ><i class="fa-solid fa-heart icon-2"></i
+        ><i class="fa-solid fa-heart icon-3"></i
+        ><i class="fa-solid fa-heart icon-4"></i
+        ><i class="fa-solid fa-heart icon-5"></i>
+      </p>
+      <button class="btn again">Again!</button>
+      <div class="flag-img">
+        <img src="images/country-1.png" alt="japan" class="show-img" />
+      </div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="text" class="guess" placeholder="text here" />
+        <button class="btn check">Check!</button>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score label">Score: <span class="score">0</span></p>
+        <p class="label-highscore label">
+          Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+  </body>
+  <script src="script.js" defer></script>
+</html>
